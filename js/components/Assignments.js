@@ -20,17 +20,20 @@ export default {
             assignments: [{
                     name: 'Finish project',
                     complete: false,
-                    id: 1
+                    id: 1,
+                    tag: 'science'
                 },
                 {
                     name: 'Read chapter 4',
                     complete: false,
-                    id: 2
+                    id: 2,
+                    tag: 'math'
                 },
                 {
                     name: 'Turn in homework',
                     complete: false,
-                    id: 3
+                    id: 3,
+                    tag: 'english'
                 }
             ],
         }
