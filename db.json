@@ -1,0 +1,27 @@
+{
+    "assignments": [{
+            "name": "Finish project",
+            "complete": false,
+            "id": 1,
+            "tag": "math"
+        },
+        {
+            "name": "Read chapter 4",
+            "complete": false,
+            "id": 1,
+            "tag": "science"
+        },
+        {
+            "name": "Turn in homework",
+            "complete": false,
+            "id": 1,
+            "tag": "English"
+        },
+        {
+            "name": "Finish course",
+            "complete": true,
+            "id": 1,
+            "tag": "Programming"
+        }
+    ]
+}

@@ -17,26 +17,16 @@ export default {
 
     data() {
         return {
-            assignments: [{
-                    name: 'Finish project',
-                    complete: false,
-                    id: 1,
-                    tag: 'science'
-                },
-                {
-                    name: 'Read chapter 4',
-                    complete: false,
-                    id: 2,
-                    tag: 'math'
-                },
-                {
-                    name: 'Turn in homework',
-                    complete: false,
-                    id: 3,
-                    tag: 'english'
-                }
-            ],
+            assignments: [],
         }
+    },
+
+    created() {
+        fetch('http://localhost:3001/assignments')
+            .then(response => response.json())
+            .then(assignments => {
+                this.assignments = assignments;
+            })
     },
 
     computed: {
