@@ -3,21 +3,29 @@ import AssignmentCreate from "./AssignmentCreate.js";
 
 export default {
     components: {
-        AssignmentList, AssignmentCreate
+        AssignmentList,
+        AssignmentCreate
     },
     template: `
-        <section class="space-y-6">
-            <assignment-list :assignments="filters.inProgress" title="In Progress"></assignment-list>
+        <section class="flex gap-8">
+            <assignment-list :assignments="filters.inProgress" title="In Progress">
+                <assignment-create @add="add"></assignment-create>
+            </assignment-list>
 
-            <assignment-list :assignments="filters.completed" title="Completed"></assignment-list>
-
-            <assignment-create @add="add"></assignment-create>
+            <assignment-list 
+                v-show="showCompleted"
+                :assignments="filters.completed" 
+                title="Completed" 
+                can-toggle
+                @toggle="showCompleted = !showCompleted"
+                ></assignment-list>
         </section>
     `,
 
     data() {
         return {
             assignments: [],
+            showCompleted: true
         }
     },
 
@@ -38,7 +46,7 @@ export default {
         }
     },
 
-    methods:  {
+    methods: {
         add(name) {
             this.assignments.push({
                 name: name,
