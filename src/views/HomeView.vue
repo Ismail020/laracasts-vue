@@ -1,20 +1,16 @@
 <script setup>
-import TheWelcome from "../components/TheWelcome.vue";
+import { useFlash } from '@/composables/useFlash';
 
+let { flash } = useFlash();
 
-let message = $ref("Hello World");
-
-setTimeout(() => {
-    message = "Hello Vue 3";
-}, 2000);
 </script>
 
 <template>
     <main>
-        <TheWelcome />
-        <p>{{ message }}</p>
         <p>
-            <input type="text" v-model="message">
+            <button @click="flash('Home', 'It Works on the Home page!')">
+                Click Me
+            </button>
         </p>
     </main>
 </template>
