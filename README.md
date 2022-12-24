@@ -1,6 +1,6 @@
-# my-first-vue-project
+# laracasts-vue
 
-This template should help get you started developing with Vue 3 in Vite.
+Laracasts course: Learn Vue 3: Step by Step
 
 ## Recommended IDE Setup
 
