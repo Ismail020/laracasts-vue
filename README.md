@@ -6,18 +6,18 @@
 
 #### First time Setup
 
-# Clone the repository to your device.
+##### Clone the repository to your device.
 ```sh
 git clone https://github.com/Ismail020/laracasts-vue.git
 
 ```
 
-# Download packages and dependencies
+##### Download packages and dependencies
 ```sh
 npm install
 ```
 
-# Run dev script
+##### Run dev script
 ```sh
 npm run dev
 ```
