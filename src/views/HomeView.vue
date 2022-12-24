@@ -7,8 +7,6 @@ let comment = ref('test value');
 
 <template>
     <main>
-        <form action="">
-            <TabbableTextarea v-model="comment" style="width: 100%; height: 300px;" />
-        </form>
+        
     </main>
 </template>
