@@ -5,13 +5,7 @@ import HelloWorld from "./components/HelloWorld.vue";
 
 <template>
     <header>
-        <img
-            alt="Vue logo"
-            class="logo"
-            src="@/assets/logo.svg"
-            width="125"
-            height="125"
-        />
+        <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
         <div class="wrapper">
             <HelloWorld msg="You did it!" />
@@ -21,11 +15,14 @@ import HelloWorld from "./components/HelloWorld.vue";
                 <RouterLink to="/about">About</RouterLink>
                 <RouterLink to="/contact">Contact</RouterLink>
                 <RouterLink to="/counter">Counter</RouterLink>
+                <RouterLink to="/team">Team</RouterLink>
             </nav>
         </div>
     </header>
 
-    <RouterView />
+    <div>
+        <RouterView />
+    </div>
 </template>
 
 <style scoped>

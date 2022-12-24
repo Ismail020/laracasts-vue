@@ -1,12 +1,16 @@
-import { createRouter, createWebHistory } from "vue-router";
+import {
+    createRouter,
+    createWebHistory
+} from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import ContactView from "../views/ContactView.vue";
 import CounterView from "../views/CounterView.vue";
+import TeamView from "../views/TeamView.vue";
 
 const router = createRouter({
-    history: createWebHistory(import.meta.env.BASE_URL),
-    routes: [
-        {
+    history: createWebHistory(
+        import.meta.env.BASE_URL),
+    routes: [{
             path: "/",
             name: "home",
             component: HomeView,
@@ -28,7 +32,13 @@ const router = createRouter({
             path: "/counter",
             name: "counter",
             component: CounterView,
-        }
+        },
+        {
+            path: "/team",
+            name: "team",
+            component: TeamView,
+        },
+
     ],
 });
 

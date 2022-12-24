@@ -7,6 +7,6 @@ let comment = ref('test value');
 
 <template>
     <main>
-        
+
     </main>
 </template>
