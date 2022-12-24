@@ -1,35 +1,23 @@
 # laracasts-vue
 
-Laracasts course: Learn Vue 3: Step by Step
+## Setup
 
-## Recommended IDE Setup
+### For local development
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+#### First time Setup
 
-## Customize configuration
+# Clone the repository to your device.
+```sh
+git clone https://github.com/Ismail020/laracasts-vue.git
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+```
 
-## Project Setup
-
+# Download packages and dependencies
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
-
+# Run dev script
 ```sh
 npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
 ```
